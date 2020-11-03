@@ -1,0 +1,27 @@
+.social {
+  position: relative;
+  margin: 16px 0 0;
+   & > a {
+     margin: 0 6px;
+     display: inline-block;
+     vertical-align: middle;
+
+     &:hover > span {
+       color: #78cc6d;
+     }
+
+     & > span {
+       -webkit-font-smoothing: antialiased;
+       display: inline-block;
+       font-style: normal;
+       font-variant: normal;
+       text-rendering: auto;
+       line-height: 1;
+       font-size: 16px;
+       color: #323232;
+       transition: all .3s ease 0s;
+       -moz-transition: all .3s ease 0s;
+       -webkit-transition: all .3s ease 0s;
+     }
+   }
+}

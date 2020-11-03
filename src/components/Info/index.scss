@@ -1,0 +1,41 @@
+.info {
+
+  margin-top: 16px;
+  z-index: 4;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+
+  .property {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    padding: 1px 8px;
+    background: #78cc6d;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+
+    & > strong {
+      text-transform: capitalize;
+    }
+    & > i {
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-feature-settings: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      font-size: 16px;
+      transition: all .3s ease 0s;
+      -moz-transition: all .3s ease 0s;
+      -webkit-transition: all .3s ease 0s;
+      margin-right: 5px;
+    }
+  }
+
+  & > span {
+    text-transform: capitalize;
+  }
+}

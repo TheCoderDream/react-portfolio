@@ -1,0 +1,21 @@
+.title  {
+  margin: 0;
+  padding: 0 0 30px;
+  position: relative;
+  font-size: 20px;
+  color: #323232;
+  line-height: 21px;
+  min-height: 51px;
+  font-weight: 600;
+  z-index: 2;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
+  }
+}
