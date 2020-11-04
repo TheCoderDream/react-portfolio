@@ -1,0 +1,28 @@
+.skills {
+  text-align: left;
+  margin-top: 30px;
+  & > h6 {
+    margin: 10px 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &  li {
+      border: 1px solid #2D2747;
+      border-radius: 2px;
+      display: inline-block;
+      font-size: 12px;
+      margin: 0 7px 7px 0;
+      padding: 7px;
+      cursor: pointer;
+      transition: transform .3s ease-in;
+
+      &:hover {
+        transform: scale(1.1) translateY(-2px);
+      }
+    }
+  }
+}

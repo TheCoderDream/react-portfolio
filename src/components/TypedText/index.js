@@ -7,11 +7,13 @@ class TypedText extends React.Component {
         text: '',
         isDeleting: false,
         loopNum: 1,
-        typingSpeed: 150
+        typingSpeed: 150,
+        cursor: '|'
     }
 
     componentDidMount() {
         this.handleType();
+        this.handleCursor();
     }
 
     handleType = () => {
@@ -37,9 +39,19 @@ class TypedText extends React.Component {
         setTimeout(this.handleType, typingSpeed);
     };
 
+    handleCursor = () => {
+        this.setState(state => ({
+            cursor: state.cursor === '|' ? '' : '|'
+        }));
+
+        setTimeout(this.handleCursor, 300)
+    }
+
     render() {
         return (
-            <span className="typed-text">{ this.state.text }</span>
+            <>
+                <span className="typed-text">{ this.state.text }<span className="typed-cursor">{this.state.cursor}</span></span>
+            </>
         );
     }
 }

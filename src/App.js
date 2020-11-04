@@ -2,11 +2,12 @@ import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import BgBubbles from "./components/BgBubbles";
 import Profile from "./components/Profile";
+
 import Menu from "./components/Menu";
 import About from "./pages/About";
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
     withRouter
@@ -43,7 +44,7 @@ const  AnimatedRoutes = withRouter(({location}) =>
             classNames="transition"
             timeout={300}
             unmountOnExit
-            key={location.key}
+            key={location.pathname}
         >
             <Switch>
                 <Route exact path="/">

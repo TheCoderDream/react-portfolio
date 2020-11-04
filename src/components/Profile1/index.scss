@@ -1,15 +1,13 @@
-:root {
-  --primary-color: #78cc6d;
-  --secondary-color: black;
-}
-
 .profile {
   font-family: Poppins, sans-serif;
   padding: 0;
-  grid-area: sd;
+  position: relative;
+  min-width: 330px;
+  height: 100%;
   background: #fff;
   text-align: center;
   z-index: 10;
+  border-radius: 4px;
   box-shadow: 10px 10px 15px rgba(0,0,0,.05);
 
   &__content {
@@ -28,46 +26,30 @@
     justify-content: center;
     overflow: hidden;
     background-color: white;
-  }
-
-  &__banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 35%;
-    width: 100%;
-    img {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      border-radius: 50%;
-      width: 150px;
-      opacity: 1 !important;
-      object-fit: contain;
-      z-index: 22;
-      animation: fadeIn reverse;
-    }
+    border-radius: 4px;
   }
 
   &__photo  {
-    background-image: url(https://reactjs.org/logo-og.png);
-    height: 100%;
-    width: 100%;
+    background-image: url(https://i.ibb.co/QPDLG6v/T4-CCV1-V4-G-UQ4-KGNEQ1-d074b7ae683a-512.jpg);
+    height: 35%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
     background-color: rgba(46,202,127,.1);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    border-radius: 4px 4px 0 0;
-    -moz-border-radius: 4px 4px 0 0;
-    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 50px;
+    padding: 12px;
+    border: 1px solid black;
 
     &::before, &::after {
       content: '';
       position: absolute;
       left: -25%;
-      bottom: -63%;
-      width: 90%;
+      bottom: -58%;
+      width: 100%;
       height: 70%;
       background: #fff;
       transform: rotate(12deg);
@@ -78,7 +60,7 @@
       left: auto;
       right: -25%;
       transform: rotate(-8deg);
-
+      -webkit-transform: rotate(-8deg);
     }
   }
 
@@ -87,21 +69,21 @@
     color: #323232;
     line-height: 32px;
     font-weight: 400;
-    margin: 240px 0 10px;
+    margin: 250px 0 10px;
     z-index: 1;
   }
 
-  //&::after {
-  //  background: linear-gradient(135deg,rgba(120,204,109,.4) 0%,rgba(120,204,109,.01) 100%);
-  //  content: '';
-  //  position: absolute;
-  //  left: -15px;
-  //  top: -15px;
-  //  width: 100%;
-  //  height: 100%;
-  //  border-radius: 4px;
-  //  z-index: -1;
-  //}
+  &::after {
+    background: linear-gradient(135deg,rgba(120,204,109,.4) 0%,rgba(120,204,109,.01) 100%);
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    z-index: -1;
+  }
 
   &__contact {
     position: absolute;
@@ -112,7 +94,6 @@
     display: flex;
     flex-direction: row;
     z-index: 10;
-
 
     &::before {
       content: '';
@@ -137,11 +118,6 @@
       text-decoration: none;
       text-transform: uppercase;
       border: none;
-      cursor: pointer;
-
-      &:hover {
-        color: var(--primary-color);
-      }
 
       &:first-child::before {
         content: '';

@@ -35,7 +35,7 @@ const Menu = () => {
 
 Menu.Item = ({link = '#', children, name }) =>
     <li>
-        <NavLink to={link} activeClassName={'active'}>
+        <NavLink to={link} activeClassName={'active'} exact>
             <span className={`icon ion-${name}`} />
             {children}
         </NavLink>

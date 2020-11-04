@@ -1,10 +1,19 @@
 .typed-text {
   margin: 0;
   display: inline-block;
-  color: #78cc6d;
+  color: var(--primary-color);
   font-size: 16px;
   line-height: 20px;
   height: 20px;
   font-weight: 400;
+  z-index: 3;
+}
+
+.typed-cursor {
+  width: 2px;
+  color: #0b0b0b;
+  font-size: 16px;
+  line-height: 20px;
+  height: 20px;
   z-index: 3;
 }

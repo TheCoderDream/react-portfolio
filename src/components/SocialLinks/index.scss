@@ -7,7 +7,7 @@
      vertical-align: middle;
 
      &:hover > span {
-       color: #78cc6d;
+       color: var(--primary-color);
      }
 
      & > span {
