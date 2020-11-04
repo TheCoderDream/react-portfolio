@@ -42,7 +42,7 @@ const  AnimatedRoutes = withRouter(({location}) =>
      <TransitionGroup className="transition-wrapper">
         <CSSTransition
             classNames="transition"
-            timeout={300}
+            timeout={1000}
             unmountOnExit
             key={location.pathname}
         >

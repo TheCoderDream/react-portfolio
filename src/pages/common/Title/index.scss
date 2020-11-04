@@ -8,6 +8,17 @@
   min-height: 51px;
   font-weight: 600;
   z-index: 2;
+  display: flex;
+  align-items: center;
+
+  & > h3 {
+    margin: 0 0 0 10px;
+  }
+
+  & > i {
+    font-size: 28px;
+    color: var(--primary-color);
+  }
 
   &::after {
     content: '';

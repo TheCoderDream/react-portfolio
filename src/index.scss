@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import "~ionicons/scss/ionicons";
 
 html,
 body {
@@ -60,8 +61,6 @@ body {
   padding: 30px 30px 0;
   position: relative;
   background: #fff;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
   z-index: 3;
   height: 100%;
   width: 100%;
@@ -96,14 +95,16 @@ body {
 
 .transition-enter {
   opacity: 0;
-  transform: translateX(-200px);
+  -webkit-transform: translate3d(-70%, 0, 0);
+  transform: translate3d(-70%, 0, 0)
 }
 
 .transition-enter-active {
+  transition-timing-function: linear;
+  transition: opacity 1s, transform 1s;
   opacity: 1;
-  transform: translateX(0%);
-  transition: opacity 300ms, transform 300ms;
-  transition-timing-function: ease-in;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0)
 }
 
 .transition-exit {
@@ -137,7 +138,7 @@ body {
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0.3;
   }
   to {
     opacity: 1;
@@ -145,5 +146,16 @@ body {
 }
 
 .fade-in {
-  animation: fadeIn .3s ease-in;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes customfadeOutLeft {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0)
+  }
 }

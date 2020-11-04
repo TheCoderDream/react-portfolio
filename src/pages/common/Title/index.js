@@ -1,11 +1,14 @@
 import React from 'react';
 import './index.scss';
 
-const Title = ({children}) => {
+const Title = ({children, icon}) => {
     return (
-        <h3 className="title">
-            {children}
-        </h3>
+        <div className="title">
+            {icon && <i className={icon} />}
+            <h3>
+                {children}
+            </h3>
+        </div>
     );
 };
 
