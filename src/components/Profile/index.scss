@@ -11,29 +11,27 @@
   text-align: center;
   z-index: 10;
   box-shadow: 10px 10px 15px rgba(0,0,0,.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &__content {
-    padding: 50px;
+    padding: 100px 50px 10px 50px;
     position: relative;
     left: 0;
     width: 100%;
     height: 100%;
     transition: all .02s ease 1s;
-    -moz-transition: all .02s ease 1s;
-    -webkit-transition: all .02s ease 1s;
-    -o-transition: all .02s ease 1s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     overflow: hidden;
     background-color: white;
   }
 
   &__banner {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     height: 35%;
     width: 100%;
     img {
@@ -52,6 +50,7 @@
 
   &__photo  {
     background-image: url(https://reactjs.org/logo-og.png);
+    clip-path: polygon(0 0, 0 87%, 50% 100%, 50% 100%, 50% 100%, 100% 87%, 100% 0);
     height: 100%;
     width: 100%;
     background-color: rgba(46,202,127,.1);
@@ -59,27 +58,9 @@
     background-position: center center;
     background-size: cover;
     border-radius: 4px 4px 0 0;
-    -moz-border-radius: 4px 4px 0 0;
-    -webkit-border-radius: 4px 4px 0 0;
+    position: relative;
+    overflow: hidden;
 
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      left: -25%;
-      bottom: -63%;
-      width: 90%;
-      height: 70%;
-      background: #fff;
-      transform: rotate(12deg);
-      -webkit-transform: rotate(12deg);
-    }
-
-    &::after {
-      left: auto;
-      right: -25%;
-      transform: rotate(-8deg);
-
-    }
   }
 
   &__title {
@@ -87,7 +68,6 @@
     color: #323232;
     line-height: 32px;
     font-weight: 400;
-    margin: 240px 0 10px;
     z-index: 1;
   }
 
@@ -104,14 +84,12 @@
   //}
 
   &__contact {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;
     z-index: 10;
+    position: relative;
 
 
     &::before {
