@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import { NavHashLink } from 'react-router-hash-link';
 import './index.scss';
 
 const Menu = () => {
@@ -7,25 +8,25 @@ const Menu = () => {
         <ul className="menu">
             <Menu.Item
                 name={"person"}
-                link="/"
+                link="/#about"
             >
                 About
             </Menu.Item>
             <Menu.Item
                 name={"android-list"}
-                link="/resume"
+                link="/resume#resume"
             >
                 Resume
             </Menu.Item>
             <Menu.Item
                 name={'paintbrush'}
-                link="/works"
+                link="/works#works"
             >
                 Works
             </Menu.Item>
             <Menu.Item
                 name={'at'}
-                link="/contact"
+                link="/contact#contact"
             >
                 Contact
             </Menu.Item>
@@ -35,10 +36,14 @@ const Menu = () => {
 
 Menu.Item = ({link = '#', children, name }) =>
     <li>
-        <NavLink to={link} activeClassName={'active'} exact>
+        <NavHashLink
+            smooth
+            to={link}
+            activeClassName={'active'}
+            exact>
             <span className={`icon ion-${name}`} />
             {children}
-        </NavLink>
+        </NavHashLink>
     </li>;
 
 export default Menu;

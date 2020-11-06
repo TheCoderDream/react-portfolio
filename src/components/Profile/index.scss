@@ -1,7 +1,4 @@
-:root {
-  --primary-color: #78cc6d;
-  --secondary-color: black;
-}
+@import "../../styles/absctract/mixins";
 
 .profile {
   font-family: Poppins, sans-serif;
@@ -32,7 +29,7 @@
 
   &__banner {
     position: relative;
-    height: 35%;
+    height: 45%;
     width: 100%;
     img {
       position: absolute;
@@ -45,6 +42,10 @@
       object-fit: contain;
       z-index: 22;
       animation: fadeIn reverse;
+    }
+
+    @include respond(tab-port) {
+      height: 200px;
     }
   }
 

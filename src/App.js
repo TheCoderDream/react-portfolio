@@ -15,6 +15,7 @@ import {
 import Resume from "./pages/Resume";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
+import BackToTop from "./components/BackToTop";
 
 const routes = [
     { path: '/', name: 'About', Component: About },
@@ -24,6 +25,7 @@ const routes = [
 function App() {
   return (
       <>
+          <BackToTop />
         <div className="page-wrap">
             <BgBubbles />
             <Router>

@@ -1,0 +1,44 @@
+@import "../../styles/absctract/mixins";
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  cursor: pointer;
+
+  i {
+    color: var(--primary-color);
+    font-size: 20px;
+  }
+
+
+  &:active {
+    color: var(--secondary-color);
+  }
+
+  @include respond(tab-port) {
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

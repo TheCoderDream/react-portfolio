@@ -6,7 +6,7 @@ import ResumeItem from "./Item";
 
 const Resume = () => {
     return (
-        <div className="page">
+        <div className="page" id="resume">
             <Title icon={'fa fa-briefcase'}>
                 Resume - Total Commercial Experience {moment().diff('09/01/2016', 'years', true).toFixed(2)} years
             </Title>

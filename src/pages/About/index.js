@@ -4,7 +4,7 @@ import Title from "../common/Title";
 
 const About = () => {
     return (
-        <div className="page">
+        <div className="page" id="about">
             <Title>
                 About Me
             </Title>

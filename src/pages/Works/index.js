@@ -4,7 +4,7 @@ import WorkItem from "./Item";
 
 const Works = () => {
     return (
-        <div className="page">
+        <div className="page" id="works">
             <Title>
                 Works
             </Title>

@@ -1,3 +1,5 @@
+@import "../../styles/absctract/mixins";
+
 @keyframes square {
     0% {
         -webkit-transform: translateY(0);
@@ -22,6 +24,11 @@
     background: white;
     background: linear-gradient(to bottom right,#50a3a2 0%,#78cc6d 100%);
     transition: all 500ms ease-in;
+
+    @include respond(tab-port) {
+        position: fixed;
+    }
+
 }
 
 .main {

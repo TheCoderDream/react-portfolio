@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 @import "~ionicons/scss/ionicons";
 
+// mixins
+@import "styles/absctract/_mixins";
+
+
+:root {
+  --primary-color: #78cc6d;
+  --secondary-color: black;
+}
+
 html,
 body {
   height: 100%;
@@ -43,7 +52,22 @@ body {
   z-index: 22;
   border-radius: 4px;
   overflow: hidden;
+
+  @include respond(tab-port) {
+    grid-template-areas:
+      "hd hd hd hd   hd   hd   hd   hd   hd"
+      "sd sd sd sd   sd   sd   sd   sd   sd"
+      "main main main main main main main main main";
+    grid-auto-rows: unset;
+  }
+
+  @include respond(phone) {
+    margin: 0;
+    border-radius: 0;
+  }
 }
+
+
 
 .page-wrap {
   position: fixed;
@@ -52,6 +76,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include respond(tab-port) {
+    position: static;
+  }
 }
 
 .page {
@@ -73,6 +101,10 @@ body {
   margin: auto 0;
   width: 100%;
   grid-area: main;
+
+  @include respond(tab-port) {
+    height: 100vh;
+  }
 }
 
 .row {
@@ -103,8 +135,10 @@ body {
   transition-timing-function: linear;
   transition: opacity 1s, transform 1s;
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0);
+  @include respond(tab-port) {
+    transition: none;
+  }
 }
 
 .transition-exit {
@@ -117,6 +151,9 @@ body {
   transform: translateX(-200px);
   transition: opacity 300ms, transform 300ms;
   transition-timing-function: ease-out;
+  @include respond(tab-port) {
+    transition: none;
+  }
 }
 
 ::-webkit-scrollbar {
