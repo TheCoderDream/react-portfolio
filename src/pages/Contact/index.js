@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from "../common/Title";
+import ContactForm from "./Form";
 
 const Contact = () => {
     return (
@@ -7,6 +8,7 @@ const Contact = () => {
             <Title>
                 Contact Me
             </Title>
+            <ContactForm/>
         </div>
     );
 };

@@ -19,7 +19,7 @@ const BgBubbles = () => {
 
 BgBubbles.Bubbles = () => {
     return range(1, 30).map(
-         n => <div className={`bubble bubble-${n}`}/>
+         n => <div key={n} className={`bubble bubble-${n}`}/>
     )
 }
 

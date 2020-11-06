@@ -1,0 +1,97 @@
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto;
+  grid-gap: 30px;
+  margin-top: 30px;
+  input, textarea {
+    margin: 0;
+    padding: 0 15px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    color: #323232;
+    background: 0 0;
+    border: 2px solid #eee;
+    resize: none;
+    outline: 0;
+    transition: all .3s ease 0s;
+    border-radius: 0;
+
+
+    &:focus {
+      border: 2px solid var(--primary-color);
+
+      &::-webkit-input-placeholder {
+        color: var(--primary-color);
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      color: #999;
+    }
+  }
+
+  textarea {
+    padding: 15px;
+    min-height: 94px;
+  }
+
+  .full-row{
+    grid-column: 1 / 3;
+  }
+
+  &__control {
+    position: relative;
+  }
+
+  &__err {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+
+  }
+
+  &__result {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+  &__scc {
+    color: var(--primary-color);
+  }
+
+  &__err {
+    color: red;
+  }
+}
+
+.send-message {
+  font-size: 14px;
+  color: #323232;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  padding: 0 30px;
+  display: inline-block;
+  float: none;
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  background: #eee;
+  border-radius: 4px;
+  vertical-align: top;
+  margin: 40px 0 0 0;
+  cursor: pointer;
+
+  &:hover {
+    border: none;
+    color: var(--primary-color);
+  }
+}

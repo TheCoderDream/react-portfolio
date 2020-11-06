@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import { interval, Subject, EMPTY} from "rxjs";
+import {switchMap, startWith} from "rxjs/operators";
 import { THEMES } from "./data";
+
+const themeChangeTimer$ = new Subject();
 
 let Context;
 const { Provider, Consumer } = Context = React.createContext();
@@ -10,9 +14,21 @@ class ThemeProvider extends Component {
         ...THEMES.react,
         type: 'react'
     }
+    subscription = null;
 
     componentDidMount() {
-        this.setThemeColors(THEMES.react)
+        this.setThemeColors(THEMES.react);
+        this.subscription = themeChangeTimer$.pipe(
+            startWith(true),
+            switchMap(val => val ? interval(10 * 1000): EMPTY )
+        ).subscribe(() => {
+            const themesKeys = Object.keys(THEMES);
+            let randomKey = themesKeys[Math.floor(Math.random() * themesKeys.length)];
+            while (randomKey === this.state.type) {
+                randomKey = themesKeys[Math.floor(Math.random() * themesKeys.length)];
+            }
+            this.changeTheme(randomKey);
+        })
     }
 
     changeTheme = (type) => {
@@ -32,6 +48,14 @@ class ThemeProvider extends Component {
         }
     }
 
+    stopThemeChangeTimer = () => {
+        themeChangeTimer$.next(false);
+    }
+
+    startThemeChangeTimer = () => {
+        themeChangeTimer$.next(true);
+    }
+
     setThemeColors(theme) {
         document.documentElement.style.setProperty('--primary-color', theme.primaryColor );
         document.documentElement.style.setProperty('--secondary-color', theme.color );
@@ -41,7 +65,9 @@ class ThemeProvider extends Component {
         return (
             <Provider value={{
                 ...this.state,
-                changeTheme: this.changeTheme
+                changeTheme: this.changeTheme,
+                stopThemeChangeTimer: this.stopThemeChangeTimer,
+                startThemeChangeTimer: this.startThemeChangeTimer
             }}>
                 {this.props.children}
             </Provider>

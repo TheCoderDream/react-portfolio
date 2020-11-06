@@ -25,6 +25,38 @@ const Works = () => {
                         demo={'http://numberless-leg.surge.sh/'}
                     />
                 </div>
+                <div className="column">
+                    <WorkItem
+                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
+                        title={'React Ecommerce App With Redux'}
+                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
+                        demo={'http://numberless-leg.surge.sh/'}
+                    />
+                </div>
+                <div className="column">
+                    <WorkItem
+                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
+                        title={'React Ecommerce App With Redux'}
+                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
+                        demo={'http://numberless-leg.surge.sh/'}
+                    />
+                </div>
+                <div className="column">
+                    <WorkItem
+                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
+                        title={'React Ecommerce App With Redux'}
+                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
+                        demo={'http://numberless-leg.surge.sh/'}
+                    />
+                </div>
+                <div className="column">
+                    <WorkItem
+                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
+                        title={'React Ecommerce App With Redux'}
+                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
+                        demo={'http://numberless-leg.surge.sh/'}
+                    />
+                </div>
             </div>
         </div>
     );
