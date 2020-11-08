@@ -58,7 +58,7 @@ body {
       "hd hd hd hd   hd   hd   hd   hd   hd"
       "sd sd sd sd   sd   sd   sd   sd   sd"
       "main main main main main main main main main";
-    grid-auto-rows: unset;
+    grid-auto-rows: 74px calc(100vh - 74px) auto;
   }
 
   @include respond(phone) {

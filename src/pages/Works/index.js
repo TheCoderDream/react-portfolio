@@ -1,62 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { projects } from './data';
 import Title from "../common/Title";
 import WorkItem from "./Item";
+import WorksMenu from "./Menu";
+
+const initalState = projects.filter(p => p.type === 'react');
 
 const Works = () => {
+    const [selectedProjects, setSelectedProjects] = useState(initalState);
+    const [selectedType, setSelectedType] = useState('react');
+
+    function handleMenuChange(type) {
+        setSelectedProjects(projects.filter(p => p.type === type));
+        setSelectedType(type);
+    }
+
+
     return (
         <div className="page" id="works">
             <Title>
-                Works
+                Works - Talk is cheap show me the code!
             </Title>
+            <WorksMenu
+                items={[
+                    'react',
+                    'angular',
+                    'vue',
+                    'js'
+                ]}
+                selected={selectedType}
+                clicked={handleMenuChange}
+            />
             <div className="row">
-                <div className="column">
-                    <WorkItem
-                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
-                        title={'React Ecommerce App With Redux'}
-                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
-                        demo={'http://numberless-leg.surge.sh/'}
-                    />
-                </div>
-                <div className="column">
-                    <WorkItem
-                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
-                        title={'React Ecommerce App With Redux'}
-                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
-                        demo={'http://numberless-leg.surge.sh/'}
-                    />
-                </div>
-                <div className="column">
-                    <WorkItem
-                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
-                        title={'React Ecommerce App With Redux'}
-                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
-                        demo={'http://numberless-leg.surge.sh/'}
-                    />
-                </div>
-                <div className="column">
-                    <WorkItem
-                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
-                        title={'React Ecommerce App With Redux'}
-                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
-                        demo={'http://numberless-leg.surge.sh/'}
-                    />
-                </div>
-                <div className="column">
-                    <WorkItem
-                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
-                        title={'React Ecommerce App With Redux'}
-                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
-                        demo={'http://numberless-leg.surge.sh/'}
-                    />
-                </div>
-                <div className="column">
-                    <WorkItem
-                        img={'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png'}
-                        title={'React Ecommerce App With Redux'}
-                        sourceCode={'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux'}
-                        demo={'http://numberless-leg.surge.sh/'}
-                    />
-                </div>
+                {
+                    selectedProjects.map(
+                        item => <div className="column" key={item.sourceCodeLink}>
+                            <WorkItem
+                                {...item}
+                            />
+                        </div>
+                    )
+                }
             </div>
         </div>
     );
