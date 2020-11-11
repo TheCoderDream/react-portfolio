@@ -62,22 +62,22 @@ const ContactForm = () => {
     }
 
     return (
-        <form onSubmit={form.handleSubmit} onChange={form.handleChange}>
+        <form onSubmit={form.handleSubmit}>
             <div className="contact-form">
                 <div className="contact-form__control">
-                    <input value={form.values.name} type="text" placeholder="Full Name" name="name"/>
+                    <input value={form.values.name} onChange={form.handleChange} type="text" placeholder="Full Name" name="name"/>
                     <FormErrorHandler name="name"/>
                 </div>
                 <div className="contact-form__control">
-                    <input value={form.values.email} type="text" placeholder="Email Address" name="email"/>
+                    <input value={form.values.email} onChange={form.handleChange} type="text" placeholder="Email Address" name="email"/>
                     <FormErrorHandler name="email"/>
                 </div>
                 <div className="contact-form__control full-row">
-                    <input value={form.values.subject} className="subject" type="text" placeholder="Subject" name="subject"/>
+                    <input value={form.values.subject} onChange={form.handleChange} className="subject" type="text" placeholder="Subject" name="subject"/>
                     <FormErrorHandler name="subject"/>
                 </div>
                 <div className="contact-form__control full-row">
-                    <textarea value={form.values.message} placeholder="Your Message" name="message"/>
+                    <textarea value={form.values.message} onChange={form.handleChange} placeholder="Your Message" name="message"/>
                     <FormErrorHandler name="message"/>
                 </div>
             </div>
