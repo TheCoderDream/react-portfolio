@@ -16,8 +16,8 @@ const Resume = () => {
                 company={'Whiz.ai'}
                 logo={'https://media-exp1.licdn.com/dms/image/C510BAQE9E2q8pBQRQA/company-logo_200_200/0?e=1612396800&v=beta&t=5WOqSFuKuclqm95UWbyPH2mBHjS4trCZDeJZJ4zNkZg'}
             >
-                • Work on front-end with extensive use of Angular and native JavaScript for developing SPA. <br/>
-                • Develop CSS with SCSS and BEM from sketchs.
+                • Work on front-end with extensive use of Angular, React and native JavaScript for developing SPA. <br/>
+                • Develop CSS with SCSS and BEM from sketches.
             </ResumeItem>
             <ResumeItem
                 date={'Apr 2019 – Sep 2019'}
@@ -27,7 +27,7 @@ const Resume = () => {
             >
                 • Develop clean, maintainable and highly interactive single page web applications using
                 Javascript, Angular, React, HTML, SASS. <br/>
-                • Responsible for design and development of the web pages from sketchs.
+                • Responsible for design and development of the web pages from sketches.
             </ResumeItem>
             <ResumeItem
                 date={'Mar 2017 – Apr 2019'}
