@@ -2,8 +2,8 @@ export const projects = [
     {
         title: 'React Portfolio',
         images: [
-            'https://i.ibb.co/df557nk/Screenshot-5.png',
-            'https://i.ibb.co/M5kSTNB/Screenshot-6.png',
+            'https://i.ibb.co/0hb1bwH/Screenshot-5.png',
+            'https://i.ibb.co/xqWqMGs/Screenshot-6.png',
         ],
         sourceCodeLink: 'https://github.com/TheCoderDream/react-portfolio',
         demoLink: 'https://emrebaskan.netlify.app/',
