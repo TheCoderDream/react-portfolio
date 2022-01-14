@@ -20,13 +20,16 @@ const SocialLinks = () => {
                 url={'https://join.skype.com/invite/b7GMpyT187y8'}
                 type={'skype'}
             />
+            <SocialLinks.Link
+                url={'https://www.instagram.com/chademre/'}
+                type={'instagram'}
+            />
         </div>
     );
 };
 
 
 
-SocialLinks.Link = ({url, type}) => <a href={url} target="_blank" ><span className={`fab fa-${type}`} /></a>
-;
+SocialLinks.Link = ({url, type}) => <a href={url} target="_blank" ><span className={`fab fa-${type}`} /></a>;
 
 export default SocialLinks;

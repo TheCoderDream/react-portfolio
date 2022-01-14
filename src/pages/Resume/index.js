@@ -16,8 +16,16 @@ const Resume = () => {
                 company={'Whiz.ai'}
                 logo={'https://media-exp1.licdn.com/dms/image/C510BAQE9E2q8pBQRQA/company-logo_200_200/0?e=1612396800&v=beta&t=5WOqSFuKuclqm95UWbyPH2mBHjS4trCZDeJZJ4zNkZg'}
             >
-                • Work on front-end with extensive use of Angular, React and native JavaScript for developing SPA. <br/>
+                • Work on front-end with extensive use of Angular, React, High Chart JS and native JavaScript for developing SPA. <br/>
                 • Develop CSS with SCSS and BEM from sketches.
+                • Performed code review
+                • Performed unit testing
+                • Was one of key developer of the project
+                <h4 className="text-center">Description</h4>
+                <p>
+                    It was the enterprise applications ecosystem and various scattered data sources for a pharma company. Its mission was to democratize enterprise data and insights via human-like conversations.
+                    I developed features like graphical charts for presentation data with High chart js, multi-language support, onboarding-tour, tooltip, modal and much more.
+                </p>
             </ResumeItem>
             <ResumeItem
                 date={'Apr 2019 – Sep 2019'}
@@ -28,6 +36,11 @@ const Resume = () => {
                 • Develop clean, maintainable and highly interactive single page web applications using
                 Javascript, Angular, React, HTML, SASS. <br/>
                 • Responsible for design and development of the web pages from sketches.
+                <h4 className="text-center">Description</h4>
+                <p>
+                    I worked in Digiturk for six months on six-month contracts. Digiturk is a Turkish satellite television provider. And It's like Netflix of turkey.  It also offers online streaming of a library of films and television programs like Netflix.
+                    Their project was written in jquery and vanilla javascript. It was messy code. My job with my teammates is to develop the application from scratch with react js by the new design.
+                </p>
             </ResumeItem>
             <ResumeItem
                 date={'Mar 2017 – Apr 2019'}
@@ -39,6 +52,14 @@ const Resume = () => {
                 Javascript, TypeScript, Angular, React, HTML, SASS. <br/>
                 • Responsible for design and development of the web pages from mock-ups (PSD). <br/>
                 • Worked the backend by using Node JS, Express and Mongo DB <br/>
+                <h4 className="text-center">Description</h4>
+                <p>
+                    I worked in Beyn Technology for more than two years. I worked with Angular, React.js, and Node.js, but I mainly focused on front-end development, but I also worked on the backend side with the knowledge of node.js. This company made casino games. My teammates and I develop User Interface for these games using React.js  and Angular. Our company also used to get jobs from customers. We made an e-commerce app for a customer using Angular and Node.js. I worked on both sides back-end and front-end, but mainly on the front-end side. I played a key role in these projects. I made the structure of codes for projects how they should be designed and how components should communicate with each other.
+
+                    In addition to interface of these games, I developed a language editor panel in Angular for these games from beginning to end by myself which makes language properties very easy to edit. It had some cool features such as auto-suggestion for keywords, auto-saving just for changes, appearing keyboard by language alphabet, find and replace, and more.
+
+                    And last but not least I developed a user interface for easily testing games for QA engineers and game developers.
+                </p>
             </ResumeItem>
             <ResumeItem
                 classNames={'not-last'}

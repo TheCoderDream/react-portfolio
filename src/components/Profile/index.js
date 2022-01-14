@@ -14,7 +14,10 @@ const Profile = () => {
         <div className="profile">
             <div className="profile__banner">
                 <div className={`profile__photo ${animation}`} style={{backgroundImage: `url(${backgroundImage})`}} />
-                <img src="https://i.ibb.co/QPDLG6v/T4-CCV1-V4-G-UQ4-KGNEQ1-d074b7ae683a-512.jpg" alt={type} />
+                <img
+                    src={'https://i.ibb.co/9tRHpgH/1632341980406-1.jpg'}
+                    alt={type}
+                />
             </div>
             <div className="profile__content">
                 <div className="profile__title">
@@ -25,7 +28,8 @@ const Profile = () => {
                       [
                           'Senior JavaScript Engineer',
                           'Frontend Development',
-                          'Backend Development'
+                          'Backend Development',
+                          'Mobile Development'
                       ]
                   }
                 />
