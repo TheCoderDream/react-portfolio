@@ -15,7 +15,7 @@ const Profile = () => {
             <div className="profile__banner">
                 <div className={`profile__photo ${animation}`} style={{backgroundImage: `url(${backgroundImage})`}} />
                 <img
-                    src={'https://i.ibb.co/8zJDndS/276321659-1163543424399997-2063385331160806960-n.jpg'}
+                    src={'https://media-exp1.licdn.com/dms/image/C4D03AQGgJpjFKB1RcA/profile-displayphoto-shrink_200_200/0/1650490604842?e=1656547200&v=beta&t=R_ffemNmgO6XvgJBoAJ3aRHawN452Bani6R32EcJRwQ'}
                     alt={type}
                 />
             </div>
