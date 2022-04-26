@@ -15,7 +15,7 @@ const Profile = () => {
             <div className="profile__banner">
                 <div className={`profile__photo ${animation}`} style={{backgroundImage: `url(${backgroundImage})`}} />
                 <img
-                    src={'https://i.ibb.co/9tRHpgH/1632341980406-1.jpg'}
+                    src={'https://i.ibb.co/8zJDndS/276321659-1163543424399997-2063385331160806960-n.jpg'}
                     alt={type}
                 />
             </div>
@@ -40,7 +40,7 @@ const Profile = () => {
                 <Skills />
             </div>
             <div className="profile__contact">
-                <a href="https://drive.google.com/file/d/1nr1uT-D-UWtxy5MBFpA6uBWQJ98LUX6D/view?usp=sharing" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1mi7YArKevgkW1A2lPaMyrhJdMfm4hyPk/view?usp=sharing" target="_blank" rel="noreferrer">
                         <span>
                             Download CV
                         </span>
