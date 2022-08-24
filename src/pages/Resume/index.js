@@ -50,7 +50,7 @@ const Resume = () => {
                 date={'Mar 2017 – Apr 2019'}
                 title={'JavaScript Developer'}
                 company={'Beyn Technology'}
-                log={beyn}
+                logo={beyn}
             >
                 • Developed clean, maintainable and highly interactive single page web applications using
                 Javascript, TypeScript, Angular, React, HTML, SASS. <br/>
