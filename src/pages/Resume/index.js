@@ -3,6 +3,10 @@ import moment from 'moment';
 import Title from "../common/Title";
 import './index.scss';
 import ResumeItem from "./Item";
+import whiz from '../../assets/companies/whiz.jpeg';
+import digiturk from '../../assets/companies/digiturk.jpeg';
+import beyn from '../../assets/companies/beyn.jpeg';
+import firat from '../../assets/companies/firat.jpeg';
 
 const Resume = () => {
     return (
@@ -14,7 +18,7 @@ const Resume = () => {
                 date={'Nov 2019 - Present'}
                 title={'Senior JavaScript Engineer'}
                 company={'Whiz.ai'}
-                logo={'https://media-exp1.licdn.com/dms/image/C510BAQE9E2q8pBQRQA/company-logo_200_200/0?e=1612396800&v=beta&t=5WOqSFuKuclqm95UWbyPH2mBHjS4trCZDeJZJ4zNkZg'}
+                logo={whiz}
             >
                 • Work on front-end with extensive use of Angular, React, High Chart JS and native JavaScript for developing SPA. <br/>
                 • Develop CSS with SCSS and BEM from sketches.
@@ -31,7 +35,7 @@ const Resume = () => {
                 date={'Apr 2019 – Sep 2019'}
                 title={'JavaScript Developer'}
                 company={'Digiturk'}
-                logo={'https://media-exp1.licdn.com/dms/image/C4D0BAQG3PHtpLchi8A/company-logo_100_100/0?e=1612396800&v=beta&t=yKG1oC59MovpZSDKOO3q9LtgtkNEAFNqreDdam9XFuQ'}
+                logo={digiturk}
             >
                 • Develop clean, maintainable and highly interactive single page web applications using
                 Javascript, Angular, React, HTML, SASS. <br/>
@@ -46,7 +50,7 @@ const Resume = () => {
                 date={'Mar 2017 – Apr 2019'}
                 title={'JavaScript Developer'}
                 company={'Beyn Technology'}
-                logo={'https://media-exp1.licdn.com/dms/image/C4D0BAQGCja_0_IGhiA/company-logo_100_100/0?e=1612396800&v=beta&t=mYjWahrtMQiY2D4qgYX-pifsRkjENdc0huOwCfbnFlE'}
+                log={beyn}
             >
                 • Developed clean, maintainable and highly interactive single page web applications using
                 Javascript, TypeScript, Angular, React, HTML, SASS. <br/>
@@ -80,7 +84,7 @@ const Resume = () => {
                 date={'2012 – 2016'}
                 title={'Firat University'}
                 company={'Turkey'}
-                logo={'https://media-exp1.licdn.com/dms/image/C510BAQE3p1j1WWn1Fg/company-logo_100_100/0?e=1612396800&v=beta&t=TPDysSQsDB8h-UUybls55tpUvFfzxzUpSBW3wD1qqoM'}
+                logo={firat}
             >
                 Bachelor's Degree in Software Engineering
             </ResumeItem>

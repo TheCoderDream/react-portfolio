@@ -6,6 +6,7 @@ import Info from "../Info";
 import Skills from "../Skills";
 import {ThemeContext} from "../../context/ThemeContext";
 import {useAnimation} from "../../use/animation";
+import me from '../../assets/me.png';
 
 const Profile = () => {
     const { backgroundImage, type } = useContext(ThemeContext);
@@ -15,7 +16,7 @@ const Profile = () => {
             <div className="profile__banner">
                 <div className={`profile__photo ${animation}`} style={{backgroundImage: `url(${backgroundImage})`}} />
                 <img
-                    src={'https://media-exp1.licdn.com/dms/image/C4D03AQGgJpjFKB1RcA/profile-displayphoto-shrink_200_200/0/1650490604842?e=1656547200&v=beta&t=R_ffemNmgO6XvgJBoAJ3aRHawN452Bani6R32EcJRwQ'}
+                    src={me}
                     alt={type}
                 />
             </div>
@@ -35,7 +36,7 @@ const Profile = () => {
                 />
                 <SocialLinks/>
                 <Info icon="location">
-                    KYIV / ISTANBUL
+                    ISTANBUL
                 </Info>
                 <Skills />
             </div>
