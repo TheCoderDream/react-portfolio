@@ -20,11 +20,21 @@ const Resume = () => {
                 company={'Whiz.ai'}
                 logo={whiz}
             >
-                • Work on front-end with extensive use of Angular, React, High Chart JS and native JavaScript for developing SPA. <br/>
-                • Develop CSS with SCSS and BEM from sketches.
-                • Performed code review
-                • Performed unit testing
-                • Was one of key developer of the project
+                • Work on front-end with extensive use of Angular, React and native JavaScript for developing
+                SPA. <br/>
+                • Develop CSS with SCSS and BEM from sketchs. <br/>
+                • Participate in the entire application lifecycle, focusing on coding and debugging. <br/>
+                • Craft code that meets company's internal standards for style, sustainability, and best
+                practices for a high-scale web environment. Maintain and advocate for these standards
+                through code review. <br/>
+                • Write clean code to develop functional web applications <br/>
+                • Troubleshoot and debug applications <br/>
+                • Perform UI tests to optimize performance <br/>
+                • Manage cutting-edge technologies to improve legacy applications <br/>
+                • Collaborate with Back-end developers to integrate user-facing elements with front-end logic <br/>
+                • Provide training and support to internal teams <br/>
+                • Build reusable code and libraries for future use <br/>
+                • Liaise with developers, designers and clients to identify new features <br/>
                 <h4 className="text-center">Description</h4>
                 <p>
                     It was the enterprise applications ecosystem and various scattered data sources for a pharma company. Its mission was to democratize enterprise data and insights via human-like conversations.

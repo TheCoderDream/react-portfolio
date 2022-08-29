@@ -34,6 +34,33 @@ const About = () => {
                     </p>
                 </div>
             </div>
+            <Title>
+                Highlights of Qualifications
+            </Title>
+            <div className="row">
+                <div className="column">
+                    <ul>
+                        <li>
+                            Sound knowledge of MVC frameworks
+                        </li>
+                        <li>
+                            Deep understanding of JavaScriptOOP & FP
+                        </li>
+                        <li>
+                            Hungry and eager to learn
+                        </li>
+                        <li>
+                            Ability to learn rapidly
+                        </li>
+                        <li>
+                            Follow emerge technologies
+                        </li>
+                        <li>
+                            Excellent coding and code review experience. Clear structure,standardized naming, strong logic, low code redundancy
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 };
